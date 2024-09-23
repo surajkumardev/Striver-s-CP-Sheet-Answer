@@ -1,0 +1,34 @@
+//-> Approach how to solve this question 
+//-> After reading this question you might find you not able to understand it what it is telling you 
+//-> So in this question the variable n is there which denotes the nubmer of test cases that the program should run 
+//-> Then we have a value x that has to be initialized with the value of 0 
+//-> Then we have to take a string input which have either "++x" or "--x" or may be reverse of this 
+//-> Inside the while loop we are running for different test cases first we take the input of the string then we check is the value at the s[1] =='+" or not 
+//-> Choosing the first index has its own meaning as we are taking input for both the ++x and x++ so the value at the s[1] will check both the condition 
+//-> and then s[1] ='+' increase the value of x by 1 else --x decrease it 
+//-> At last print the answer
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t; //number of differnt test cases
+    cin >> t;
+    int x=0;
+
+    string s;
+    while (t--){
+        cin >> s; //user sai the ++x or --x ko input liya hai 
+        if (s[1] == '+')
+        {
+            ++x;
+        }
+        else
+        {
+            --x;
+        }
+    }
+
+    cout << x << endl;
+    return 0;
+}
