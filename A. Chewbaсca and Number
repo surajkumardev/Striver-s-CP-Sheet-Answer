@@ -1,0 +1,38 @@
+// A. Chewbaсca and Number
+//striver cp sheet first question 
+//You have to think when iterating through each digit by converting the int to 
+//Frankly Speaking the question is bit tricky and even i don't understanded the question perfectly 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+    string s;
+    cin>>s;
+    int len=s.size();
+    //first digit
+    int f=s[0]-'0'; //integer mai convert karne kai liye
+    if(f==9){
+        s[0]='9';
+    }
+    else{
+        if(f>4){
+            s[0]=((9-f)+'0');
+        }
+    }
+    for(int i=1;i<len;i++){
+            int a=s[i]-'0';
+            if(a<5 || a==0){
+                continue;
+            }
+            else{
+                s[i]=((9-a)+'0');
+            }
+        
+    }
+    cout<<s;
+return 0;
+
+}
