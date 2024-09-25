@@ -1,0 +1,27 @@
+// A. Beautiful Matrix -> striver cp sheet third question
+//In this question you might think of using  a 2d array to take input and traversing 
+//Then you are also begineer just like many more grow up 
+//....Approach....
+// To find the maximum nubmer of steps to take the 1 to the center which is arr[3][3]
+//we are going to use simmple maths if n==1 then ans=abs(i-3) +abs(j-3); //here the abs is an inbuilt function in c++ which conver the negative nubmer to positive and only return the absolute mod of the obtained value d
+
+#include <bits/stdc++.h>of 
+using namespace std;
+
+int main()
+{
+    int arr[5][5];
+    int ans;   
+    for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                int n;
+                cin>>n;
+                if(n==1){
+                    ans=abs(i-3)+abs(j-3);
+                }
+            }
+    }
+    cout<<ans;
+
+return 0;
+}
